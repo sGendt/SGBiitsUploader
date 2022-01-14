@@ -1,0 +1,126 @@
+.z-biits-uploader {
+  display: flex;
+  position: relative;
+  width: 300px;
+  height: 150px;
+  background-color: grey;
+  border: solid 1px dimgrey;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.z-biits-uploader:hover .n-biits-uploader {
+  text-decoration: underline;
+}
+
+.n-biits-uploader {
+  color: white;
+  text-align: center;
+}
+
+.i-biits-uploader {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.p-biits-uploader {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left:0;
+  bottom:0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.p-biits-uploader.bu-square {
+  background-size: 100%;
+  background-position: center;
+}
+
+.p-biits-uploader.bu-portrait {
+  background-size: auto 100%;
+  background-position: center;
+}
+
+.p-biits-uploader.bu-landscape {
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.ms-biits-uploader {
+  position: absolute;
+  text-align: center;
+  width: calc(100% + 2px);
+  left: -1px;
+  right: 0;
+  top: -1px;
+  background-color: #f8d7da;
+  border: solid 1px #f5c2c7;
+  border-radius: 5px 5px 0 0;
+  color: #842029;
+  font-size: .8em;
+}
+
+.rm-biits-uploader {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left:0;
+  bottom:0;
+  z-index: 10;
+}
+
+.rmc-biits-uploader {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 2px #842029;
+  left: calc(50% - 25px);
+  top: calc(50% - 25px)
+}
+
+.rmc-biits-uploader:before, .rmc-biits-uploader:after {
+  position: absolute;
+  left: calc(50% - 1px);
+  top: calc(50% - 16.5px);
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #842029;
+}
+.rmc-biits-uploader:before {
+  transform: rotate(45deg);
+}
+.rmc-biits-uploader:after {
+  transform: rotate(-45deg);
+}
+
+
+
+.dn-bu {
+  display : none;
+}
+
+.d-bu {
+  display: block;
+}
+
